@@ -18,7 +18,7 @@
 ## 사용법
 ![802 11 dump_ex](https://user-images.githubusercontent.com/12112214/106164576-755ab180-61cd-11eb-97b3-ba6bd2c839d5.png)
 
-    802.11.dump [랜카드 이름]
+    ./802.11.dump [랜카드 이름]
 
 ## 예시
 ![802 11 dump](https://user-images.githubusercontent.com/12112214/106164574-755ab180-61cd-11eb-8ce7-b349aa752d05.png)
