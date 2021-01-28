@@ -21,7 +21,7 @@
     ./802.11.dump [랜카드 이름]
 
 ## 예시
-![802 11 dump](https://user-images.githubusercontent.com/12112214/106164574-755ab180-61cd-11eb-8ce7-b349aa752d05.png)
+![802 11 dump](https://user-images.githubusercontent.com/12112214/106185759-95e33580-61e6-11eb-8a7c-7057a3ab7c50.png)
 
 ## airodump-ng와 비교
-![ariodump](https://user-images.githubusercontent.com/12112214/106164570-74298480-61cd-11eb-99fe-1fe1f2555cdf.png)
+![airodump](https://user-images.githubusercontent.com/12112214/106185758-94b20880-61e6-11eb-99c2-1d38846ccb20.png)

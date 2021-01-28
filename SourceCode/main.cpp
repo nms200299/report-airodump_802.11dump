@@ -4,6 +4,7 @@
 #include <unistd.h> // usleep fork
 #include <string.h> // memset
 #include <time.h>   // clock
+//#include <wait.h> // wait
 
 void usage() {
     printf("syntax: 802.11.dump <interface>\n");
@@ -190,6 +191,7 @@ int main(int argc, char* argv[]) {
 
                     // ▼ Beacons 패킷이면 여러가지 정보를 추출해냄.
                     if (packet[24]==0x80) {
+                        n=0;
                         i=61+packet[61];
                         for(;packet[i+1]!=0;){
                             switch (packet[i+1]) {
@@ -442,18 +444,19 @@ int main(int argc, char* argv[]) {
                     channel1 = channel1 + 1;
                 }
                  system(command);
-                 sleep(1);
-                // 1초에 한번씩 iwconfig 명령어로 채널 정보를 바꿈
+                 usleep(500000);
+                // 0.5초에 한번씩 iwconfig 명령어로 채널 정보를 바꿈
                 // (2.4Ghz 대역 채널인 1~13번 채널 반복)
-
-                // (가지고 있는 랜카드가 2.4Ghz만 지원해서 5.8Ghz 채널 변경은 구현하지 않았음.)
-
-                // 5.8Ghz 대역의 채널 정보는 다음과 같음.
-                // A 대역 : 36, 40, 44, 48
-                // B 대역 : 52, 56, 60, 64
-                // C 대역 : 100, 104, 108, 112, 116, 120
-                // D 대역 : 149, 153, 108, 157, 161
        }
+
+        // (가지고 있는 랜카드가 2.4Ghz만 지원해서 5.8Ghz 채널 변경은 구현하지 않았음.)
+
+        // 5.8Ghz 대역의 채널 정보는 다음과 같음.
+        // A 대역 : 36, 40, 44, 48
+        // B 대역 : 52, 56, 60, 64
+        // C 대역 : 100, 104, 108, 112, 116, 120
+        // D 대역 : 149, 153, 108, 157, 161
+
 //######################### ▼ fork 에러 #########################
     } else {
         exit(1);
