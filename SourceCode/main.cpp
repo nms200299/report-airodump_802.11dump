@@ -7,8 +7,8 @@
 //#include <wait.h> // wait
 
 void usage() {
-    printf("syntax: 802.11.dump <interface>\n");
-    printf("sample: 802.11.dump wlan0\n");
+    printf("syntax: 802.11dump <interface>\n");
+    printf("sample: 802.11dump wlan0\n");
 } // 사용 예시 출력 함수.
 
 void byte2char(int byte){
