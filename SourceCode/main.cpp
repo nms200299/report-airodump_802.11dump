@@ -124,7 +124,7 @@ int main(int argc, char* argv[]) {
                       //  (Probe Request 패킷의 경우 Source Address 영역이 34번째)
                 }
                 // ▲ 새로 잡힌 따끈따끈한 BSSID를 임시 공간에 저장함.
-                // (임시 공간 영역 = info[0][x][0] (x=1 to 5))
+                // (임시 공간 영역 = info[0][x][0] (x=0 to 5))
 
                if (num == 1){
                    for(i=0; i<=5; i++){
