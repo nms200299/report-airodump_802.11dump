@@ -16,7 +16,7 @@
 
 
 ## 사용법
-![802 11 dump_ex](https://user-images.githubusercontent.com/12112214/106164576-755ab180-61cd-11eb-97b3-ba6bd2c839d5.png)
+![802 11dump_ex](https://user-images.githubusercontent.com/12112214/106230520-0a43c600-6233-11eb-85b6-487ee1fc1137.png)
 
     ./802.11dump [랜카드 이름]
 
